@@ -1,0 +1,7 @@
+.gallery__grid-container {
+   margin: 0 200px;
+   display: grid;
+   grid-template-columns: repeat(3, minmax(max-content, 281px));
+   grid-template-rows: repeat(2, minmax(max-content, 361px));
+   gap: 17px 20px;
+}

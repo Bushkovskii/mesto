@@ -16,36 +16,10 @@
 @import url(../blocks/profile/__button/_action/profile__button_action_edit.css);
 @import url(../blocks/profile/__button/_action/profile__button_action_add.css);
 
-.gallery__grid-container {
-   margin: 0 200px;
-   display: grid;
-   grid-template-columns: repeat(3, minmax(max-content, 281px));
-   grid-template-rows: repeat(2, 1fr);
-   gap: 17px 20px;
-}
-
-.gallery__item {
-   background-color: #fff;
-   max-width: 282px;
-   display: flex;
-   flex-direction: column;
-   border-radius: 10px;
-   overflow: hidden;
-}
-
-.gallery__image {
-   max-width: 282px;
-}
-
-.gallery__title {
-   font-weight: 900;
-   font-size: 24px;
-   line-height: 29px;
-   display: flex;
-   justify-content: space-between;
-   margin: 25px 30px 31px 21px;
-}
-
-.gallery__like {
-   display: block;
-}
+/* GALLERY*/
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/gallery/__grid-container/gallery__grid-container.css);
+@import url(../blocks/gallery/__image/gallery__image.css);
+@import url(../blocks/gallery/__item/gallery__item.css);
+@import url(../blocks/gallery/__like/gallery__like.css);
+@import url(../blocks/gallery/__title/gallery__title.css);
