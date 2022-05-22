@@ -2,3 +2,22 @@
    display: block;
    margin: 40px 30px 47.25px 200px;
 }
+
+@media screen and (max-width: 1024px) {
+   .profile__image {
+      margin-left: 150px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .profile__image {
+      margin-left: 100px;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .profile__image {
+      margin-left: auto;
+      margin-right: auto;
+   }
+}

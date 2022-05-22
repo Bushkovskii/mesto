@@ -5,3 +5,14 @@
    column-gap: 18px;
    row-gap: 16px;
 }
+
+@media screen and (max-width: 320px) {
+   .profile__info {
+      grid-template-columns: 189px 18px;
+      grid-template-rows: 1fr 1fr;
+      margin-left: 66px;
+      margin-right: 38px;
+      column-gap: 10px;
+      row-gap: 14px;
+   }
+}

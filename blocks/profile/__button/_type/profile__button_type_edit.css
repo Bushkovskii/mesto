@@ -5,3 +5,17 @@
 .profile__button_type_edit:hover {
    cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+   .profile__button_type_edit {
+      width: 18px;
+      margin-top: 0;
+      align-self: center;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .profile__button_type_edit {
+      align-items: flex-end;
+   }
+}
