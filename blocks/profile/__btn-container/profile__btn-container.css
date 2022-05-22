@@ -1,7 +1,0 @@
-.profile__btn-container {
-   position: relative;
-}
-
-.profile__btn-container:nth-of-type(2){
-   margin-right: 0;
-}
