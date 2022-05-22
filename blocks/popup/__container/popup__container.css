@@ -9,3 +9,13 @@
    height: 330px;
    border-radius: 10px;
 }
+
+@media screen and (max-width: 320px) {
+   .popup__container {
+      width: 282px;
+      height: 322px;
+      margin: 0 19px 0 19px;
+      top: 123px;
+      left: 0;
+   }
+}

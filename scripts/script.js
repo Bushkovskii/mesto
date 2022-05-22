@@ -1,6 +1,6 @@
 const editButton = document.querySelector('.profile__button_type_edit');
 const popupOpen = document.querySelector('.popup');
-const popupClose = document.querySelector('.popup__close-icon');
+const popupClose = document.querySelector('.popup__close-button');
 
 function popupOpened() {
    popupOpen.classList.add('popup_opened');
