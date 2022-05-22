@@ -3,3 +3,7 @@
    left: 438px;
    top: -40px;
 }
+
+.popup__close-icon:hover {
+   cursor: pointer;
+}
