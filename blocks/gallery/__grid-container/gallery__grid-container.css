@@ -1,7 +1,29 @@
 .gallery__grid-container {
    margin: 0 200px;
    display: grid;
-   grid-template-columns: repeat(3, minmax(max-content, 281px));
-   grid-template-rows: repeat(2, minmax(max-content, 361px));
+   grid-template-columns: repeat(3, 281px);
+   grid-template-rows: repeat(2, 361px);
    gap: 17px 20px;
+}
+
+@media screen and (max-width: 1024px) {
+   .gallery__grid-container {
+      margin-left: 70px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .gallery__grid-container {
+      margin-left: 100px;
+      grid-template-columns: repeat(2, 281px);
+      grid-template-rows: repeat(3, 361px);
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .gallery__grid-container {
+      margin: 0 19px;
+      grid-template-columns: repeat(1, 281px);
+      grid-template-rows: repeat(auto-fill, 361px);
+   }
 }
