@@ -4,7 +4,7 @@
 /* HEADER */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
-@import url(../blocks/header/__line/header__logo.css);
+@import url(../blocks/header/__line/header__line.css);
 
 /* PROFILE*/
 @import url(../blocks/profile/profile.css);
