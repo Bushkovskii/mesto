@@ -2,8 +2,6 @@
    font-weight: 900;
    font-size: 24px;
    line-height: 29px;
-   display: flex;
-   justify-content: space-between;
    margin: 25px 30px 31px 21px;
    text-overflow: ellipsis;
    white-space: nowrap;
