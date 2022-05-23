@@ -1,13 +1,12 @@
 .profile__button_type_add {
    margin-right: 200px;
+   min-width: 150px;
+   height: 50px;
    align-self: center;
+   border: 2px solid #ffffff;
    border-radius: 2px;
    transition: .5s;
-}
-
-.profile__button_type_add:hover {
-   cursor: pointer;
-   opacity: .6;
+   z-index: 0;
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,3 +1,9 @@
-/* .profile__button {
-   opacity: 0; 
-} Лишний класс? на заметку */
+.profile__button {
+   background-color: black;
+   transition: .5s;
+}
+
+.profile__button:hover {
+   opacity: .6;
+   cursor: pointer;
+}
