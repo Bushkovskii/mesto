@@ -3,6 +3,13 @@
    left: 438px;
    top: -40px;
    transition: .5s;
+   width: 32px;
+   height: 32px;
+   padding: 0;
+   background-image: url(../../../images/popup/close-icon.png);
+   background-position: center;
+   border: 0;
+   background-color: transparent;
 }
 
 .popup__close-button:hover {
@@ -13,6 +20,7 @@
 @media screen and (max-width: 320px) {
    .popup__close-button {
       width: 20px;
+      height: 20px;
       left: 262px;
    }
 }
