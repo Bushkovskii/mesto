@@ -1,6 +1,7 @@
 .profile__image {
    display: block;
    margin: 40px 30px 47.25px 200px;
+   object-fit: contain;
 }
 
 @media screen and (max-width: 1024px) {

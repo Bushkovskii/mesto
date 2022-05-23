@@ -22,6 +22,8 @@
 @import url(../blocks/profile/__btn-container/profile__btn-container.css);
 @import url(../blocks/profile/__btn-icon/_type/profile__btn-icon_type_add.css);
 @import url(../blocks/profile/__add-icon/profile__add-icon.css);
+@import url(../blocks/profile/__edit-icon/profile__edit-icon.css);
+
 
 /* POPUP*/
 @import url(../blocks/popup/popup.css);

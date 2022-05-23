@@ -1,6 +1,13 @@
 .profile__button_type_edit {
    margin-top: 15px;
    transition: .5s;
+   width: 24px;
+   height: 24px;
+   border: 1px solid #ffffff;
+   padding: 0;
+   background-image: url(../../../../images/profile/edit-icon.svg);
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
 .profile__button_type_edit:hover {
@@ -10,7 +17,7 @@
 
 @media screen and (max-width: 768px) {
    .profile__button_type_edit {
-      width: 18px;
+
       margin-top: 0;
       align-self: center;
    }

@@ -4,6 +4,13 @@
    font-size: 42px;
    line-height: 48px;
    font-weight: 500;
+   /* white-space: nowrap; */
+}
+
+@media screen and(max-width: 1024px) {
+   .profile__name {
+      /* white-space: wrap; */
+   }
 }
 
 @media screen and (max-width: 768px) {
