@@ -1,4 +1,5 @@
 .gallery__like {
    display: block;
    margin-right: 20px;
+   align-self: center;
 }
