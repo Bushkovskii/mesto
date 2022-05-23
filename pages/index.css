@@ -49,6 +49,8 @@
 @import url(../blocks/gallery/__title/gallery__title.css);
 @import url(../blocks/gallery/__info/gallery__info.css);
 @import url(../blocks/gallery/__like/_active/gallery__like_active.css);
+@import url(../blocks/gallery/__like-button/gallery__like-button.css);
+@import url(../blocks/gallery/__like-button/_active/gallery__like-button_active.css);
 
 /* FOOTER*/
 @import url(../blocks/footer/footer.css);
