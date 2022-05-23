@@ -1,9 +1,11 @@
 .profile__button_type_edit {
-   margin-top: 15px; 
+   margin-top: 15px;
+   transition: .5s;
 }
 
 .profile__button_type_edit:hover {
    cursor: pointer;
+   opacity: .6;
 }
 
 @media screen and (max-width: 768px) {

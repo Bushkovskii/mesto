@@ -5,15 +5,22 @@
    margin-right: auto;
    background-color: #000;
    color: #fff;
+   border: 0;
+   border-radius: 2px;
    text-align: center;
    font-size: 18px;
    line-height: 22px;
+   transition: .5s;
+}
+
+.form__button:hover {
+   opacity: 0.8;
+   cursor: pointer;
 }
 
 @media screen and (max-width: 320px) {
    .form__button {
       width: 238px;
       height: 46px;
-
    }
 }
