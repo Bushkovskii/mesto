@@ -1,0 +1,4 @@
+.gallery__info {
+   display: flex;
+   justify-content: space-between;
+}
