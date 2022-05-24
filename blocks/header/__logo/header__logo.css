@@ -1,22 +1,17 @@
 .header__logo {
-   margin: 45px 0 41px 200px;
+   margin: 45px 0 41px 0;
+   /* justify-items: flex-start; */
 }
 
-@media screen and (max-width: 1024px) {
-   .header__logo {
-      margin-left: 150px;
-   }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 882px) {
    .header__logo {
       margin-left: 100px;
    }
 }
+
 @media screen and (max-width: 320px) {
    .header__logo {
-      margin-left: 27px;
-      margin-top: 28px;
+      margin: 28px 0 31.6px 27px;
       width: 103.74px;
       height: 24.4px;
    }
