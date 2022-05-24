@@ -1,0 +1,40 @@
+.popup__form-item {
+   width: 358px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 0 13px 0;
+   font-family: inherit;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 17px;
+   border: 0;
+   border-bottom: 1px solid rgba(000, 000, 000, .2);
+}
+
+.popup__form-item:nth-of-type(1) {
+   margin-top: 54px;
+}
+
+.popup__form-item:nth-of-type(2) {
+   margin-top: 30px;
+   margin-bottom: 48px;
+}
+
+.popup__form-item:focus {
+   outline-style: none;
+}
+
+@media screen and (max-width: 320px) {
+   .popup__form-item {
+      margin-left: 22px;
+      width: 238px;
+   }
+
+   .popup__form-item:nth-of-type(1) {
+      margin-top: 75px;
+   }
+
+   .popup__form-item:nth-of-type(2) {
+      margin-bottom: 45px;
+   }
+}

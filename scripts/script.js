@@ -6,10 +6,10 @@ const popupClose = document.querySelector('.popup__close-button');
 let profileName = document.querySelector('.profile__name');
 let profileAbout = document.querySelector('.profile__about');
 //форма
-let form = document.querySelector('.form');
-let formName = document.querySelector('.form__item_el_name');
-let formAbout = document.querySelector('.form__item_el_about');
-let buttonSave = document.querySelector('.form__button');
+let form = document.querySelector('.popup__form');
+let formName = document.querySelector('.popup__form-item_el_name');
+let formAbout = document.querySelector('.popup__form-item_el_about');
+let buttonSave = document.querySelector('.popup__form-button');
 
 //Открытие/закрытие попапа
 function popupOpened() {
