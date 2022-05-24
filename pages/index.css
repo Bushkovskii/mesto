@@ -45,4 +45,4 @@
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 
 /* FONTS*/
-@import url(../fonts/inter.css);
+@import url(../vendor/fonts/inter.css);
