@@ -11,15 +11,14 @@
 <body class="page">
    <header class="header">
       <img src="images/header/logo.svg" alt="Логотип" class="header__logo">
-      <!-- <img src="images/header/line.png" alt="Разделительная линия" class="header__line"> -->
    </header>
-   <main>
+   <main class="content">
       <section class="profile">
          <div class="profile__flex-container">
             <img src="images/profile/profile-image.png" alt="Жак Ив Кусто" class="profile__image">
             <div class="profile__info">
                <h1 class="profile__name">Жак-Ив Кусто</h1>
-               <button class="profile__button profile__button_type_edit">
+               <button type="button" class="profile__button profile__button_type_edit">
                </button>
                <p class="profile__about">Исследователь океана</p>
             </div>
@@ -29,50 +28,51 @@
       </section>
 
       <section class="gallery">
-         <div class="gallery__grid-container">
-            <div class="gallery__item">
+         <ul class="gallery__grid-container">
+            <li class="gallery__item">
                <img src="images/gallery/sudak.jpg" alt="Горы" class="gallery__image">
                <div class="gallery__info">
-                  <h3 class="gallery__title">Судак</h3>
+                  <h2 class="gallery__title">Судак</h2>
                   <button type="button" class="gallery__like-button gallery__like-button_active"></button>
                </div>
-            </div>
-            <div class="gallery__item">
+            </li>
+            <li class="gallery__item">
                <img src="images/gallery/ruskeala.jpg" alt="Озеро и горы" class="gallery__image">
                <div class="gallery__info">
-                  <h3 class="gallery__title">Рускеала</h3>
+                  <h2 class="gallery__title">Рускеала</h2>
                   <button type="button" class="gallery__like-button gallery__like-button_active"></button>
                </div>
-            </div>
-            <div class="gallery__item">
+            </li>
+            <li class="gallery__item">
                <img src="images/gallery/Rybachy.jpg" alt="Река и лес" class="gallery__image">
                <div class="gallery__info">
-                  <h3 class="gallery__title">Полуостров Рыбачий</h3>
+                  <h2 class="gallery__title">Полуостров Рыбачий</h2>
                   <button type="button" class="gallery__like-button gallery__like-button_active"></button>
                </div>
-            </div>
-            <div class="gallery__item">
+               </div>
+            <li class="gallery__item">
                <img src="images/gallery/elbrus.png" alt="Гора Эльбрус" class="gallery__image">
                <div class="gallery__info">
-                  <h3 class="gallery__title">Гора Эльбрус</h3>
+                  <h2 class="gallery__title">Гора Эльбрус</h2>
                   <button type="button" class="gallery__like-button gallery__like-button_active"></button>
                </div>
-            </div>
-            <div class="gallery__item">
+            </li>
+            <li class="gallery__item">
                <img src="images/gallery/dombii.png" alt="Леса и горы" class="gallery__image">
                <div class="gallery__info">
-                  <h3 class="gallery__title">Домбай</h3>
+                  <h2 class="gallery__title">Домбай</h2>
                   <button type="button" class="gallery__like-button gallery__like-button_active"></button>
                </div>
-            </div>
-            <div class="gallery__item">
-               <img src="images/gallery/kirill-pershin-1088404-unsplash.jpg" alt="" class="gallery__image">
+            </li>
+            <li class="gallery__item">
+               <img src="images/gallery/kirill-pershin-1088404-unsplash.jpg" alt="Старое каменное здание"
+                  class="gallery__image">
                <div class="gallery__info">
-                  <h3 class="gallery__title">Карачаево-Черкессия</h3>
+                  <h2 class="gallery__title">Карачаево-Черкессия</h2>
                   <button type="button" class="gallery__like-button gallery__like-button_active"></button>
                </div>
-            </div>
-         </div>
+            </li>
+         </ul>
       </section>
       <section class="popup">
          <div class="popup__container">
@@ -80,7 +80,7 @@
             <form action="submit" name="profile" class="popup__form">
                <input type="text" name="profileName" class="popup__form-item popup__form-item_el_name">
                <input type="text" name="profileAbout" class="popup__form-item popup__form-item_el_about">
-               <button class="popup__form-button">Сохранить</button>
+               <button type="submit" class="popup__form-button">Сохранить</button>
             </form>
             <button type="button" name="profileSaveButton" class="popup__close-button"></button>
          </div>

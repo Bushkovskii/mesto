@@ -3,6 +3,9 @@
    grid-template-columns: repeat(3, minmax(200px, 281px));
    grid-template-rows: repeat(2, 361px);
    gap: 17px 20px;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
 }
 
 @media screen and (max-width: 768px) {
