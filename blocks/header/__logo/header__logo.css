@@ -3,12 +3,6 @@
    /* justify-items: flex-start; */
 }
 
-@media screen and (max-width: 882px) {
-   .header__logo {
-      margin-left: 100px;
-   }
-}
-
 @media screen and (max-width: 320px) {
    .header__logo {
       margin: 28px 0 31.6px 27px;

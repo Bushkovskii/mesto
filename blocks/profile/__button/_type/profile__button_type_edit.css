@@ -22,8 +22,16 @@
    }
 }
 
+@media screen and (max-width: 546px) {
+   .profile__button_type_edit {
+      width: 20px;
+   }
+}
+
 @media screen and (max-width: 320px) {
    .profile__button_type_edit {
-      align-items: flex-end;
+      width: 18px;
+      height: 18px;
+      background-size: 7.5px;
    }
 }
