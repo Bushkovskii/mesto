@@ -10,12 +10,6 @@
    overflow: hidden;
 }
 
-@media screen and (max-width: 1024px) {
-   .profile__about {
-      /* margin-right: 80px; */
-   }
-}
-
 @media screen and (max-width: 768px) {
    .profile__about {
       font-size: 14px;

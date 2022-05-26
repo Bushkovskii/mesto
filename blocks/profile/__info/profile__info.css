@@ -5,9 +5,10 @@
    column-gap: 18px;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 768px) {
    .profile__info {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr max-content;
+      text-align: center;
    }
 }
 
