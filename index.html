@@ -29,49 +29,7 @@
 
       <section class="gallery">
          <ul class="gallery__grid-container">
-            <li class="gallery__item">
-               <img src="images/gallery/sudak.jpg" alt="Горы" class="gallery__image">
-               <div class="gallery__info">
-                  <h2 class="gallery__title">Судак</h2>
-                  <button type="button" class="gallery__like-button gallery__like-button_active"></button>
-               </div>
-            </li>
-            <li class="gallery__item">
-               <img src="images/gallery/ruskeala.jpg" alt="Озеро и горы" class="gallery__image">
-               <div class="gallery__info">
-                  <h2 class="gallery__title">Рускеала</h2>
-                  <button type="button" class="gallery__like-button gallery__like-button_active"></button>
-               </div>
-            </li>
-            <li class="gallery__item">
-               <img src="images/gallery/Rybachy.jpg" alt="Река и лес" class="gallery__image">
-               <div class="gallery__info">
-                  <h2 class="gallery__title">Полуостров Рыбачий</h2>
-                  <button type="button" class="gallery__like-button gallery__like-button_active"></button>
-               </div>
-            </li>
-            <li class="gallery__item">
-               <img src="images/gallery/elbrus.png" alt="Гора Эльбрус" class="gallery__image">
-               <div class="gallery__info">
-                  <h2 class="gallery__title">Гора Эльбрус</h2>
-                  <button type="button" class="gallery__like-button gallery__like-button_active"></button>
-               </div>
-            </li>
-            <li class="gallery__item">
-               <img src="images/gallery/dombii.png" alt="Леса и горы" class="gallery__image">
-               <div class="gallery__info">
-                  <h2 class="gallery__title">Домбай</h2>
-                  <button type="button" class="gallery__like-button gallery__like-button_active"></button>
-               </div>
-            </li>
-            <li class="gallery__item">
-               <img src="images/gallery/kirill-pershin-1088404-unsplash.jpg" alt="Старое каменное здание"
-                  class="gallery__image">
-               <div class="gallery__info">
-                  <h2 class="gallery__title">Карачаево-Черкессия</h2>
-                  <button type="button" class="gallery__like-button gallery__like-button_active"></button>
-               </div>
-            </li>
+
          </ul>
       </section>
       <section id="popupEdit" class="popup">
@@ -100,6 +58,16 @@
    <footer class="footer">
       <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
    </footer>
+<!--   template gallery item-->
+   <template id="gallery-template">
+      <li class="gallery__item">
+         <img src="" alt="" class="gallery__image">
+         <div class="gallery__info">
+            <h2 class="gallery__title"></h2>
+            <button type="button" class="gallery__like-button"></button>
+         </div>
+      </li>
+   </template>
    <script src="scripts/index.js"></script>
 </body>
 
