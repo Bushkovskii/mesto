@@ -41,9 +41,9 @@ let profileFormAbout = document.querySelector('#ProfileAbout');
 const addButton = document.querySelector('.profile__button_type_add');
 const popupNewItem = document.querySelector('#popupAdd');
 const newItemCloseButton = document.querySelector('#NewItemCloseButton')
+let newItem = document.querySelector('#NewItem');
 let newItemTitle = document.querySelector('#NewItemTitle');
 let newItemLink = document.querySelector('#NewItemLink');
-let newItemButton = document.querySelector('#NewItemButton');
 
 function popupOpen(popup) {
    popup.classList.add('popup_opened');
@@ -82,17 +82,48 @@ newItemCloseButton.addEventListener('click', () => {
    popupClose(popupNewItem);
 });
 
-//Карточки
-initialCards.forEach(element => {
+//Функция добавление карточки
+function addCard(element) {
    const galleryTemplate = document.querySelector('#gallery-template').content;//Template
    const galleryItem = galleryTemplate.cloneNode(true);//Клонирование template
 
    galleryItem.querySelector('.gallery__title').textContent = element.name;
    galleryItem.querySelector('.gallery__image').src = element.link;
 
+   //Лайк
    galleryItem.querySelector('.gallery__like-button').addEventListener('click', function (event){
       event.target.classList.toggle('gallery__like-button_active');
-   })//Лайк
+   })
 
-   gallery.append(galleryItem);//Добавление карточки в список
+   gallery.prepend(galleryItem);//Добавление карточки в список
+}
+//Добавление карточек из массива
+   initialCards.forEach(element => {
+      addCard(element);
+   });
+
+//Обработчик(объявленная функция)
+// function addCardHandler(evt) {
+//    evt.preventDefault();
+//    let titleValue = newItemTitle.value;
+//    let linkValue = newItemLink.value;
+//    const card = {
+//       name: titleValue,
+//       link: linkValue
+//    }
+//    addCard(card);
+//    popupClose(popupNewItem);
+// }
+
+//Добавление карточки, которую запросил пользователь
+newItem.addEventListener('submit', (evt) => {
+   evt.preventDefault();
+   let titleValue = newItemTitle.value;
+   let linkValue = newItemLink.value;
+   const card = {
+      name: titleValue,
+      link: linkValue
+   }
+   addCard(card);
+   popupClose(popupNewItem);
 });
