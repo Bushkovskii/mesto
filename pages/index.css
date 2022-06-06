@@ -41,6 +41,7 @@
 @import url(../blocks/gallery/__info/gallery__info.css);
 @import url(../blocks/gallery/__like-button/gallery__like-button.css);
 @import url(../blocks/gallery/__like-button/_active/gallery__like-button_active.css);
+@import url(../blocks/gallery/__trash/gallery__trash.css);
 
 /* FOOTER*/
 @import url(../blocks/footer/footer.css);
