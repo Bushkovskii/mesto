@@ -6,14 +6,15 @@ const addButton = document.querySelector('.profile__button_type_add');
 const popupNewItem = document.querySelector('#popupAdd');
 const newItemCloseButton = document.querySelector('#NewItemCloseButton')
 const popupImageCloseButton = document.querySelector('#popupImageCloseButton');
+const form = document.querySelector('.popup__form');
+const newItem = document.querySelector('#NewItem');
+const newItemTitle = document.querySelector('#NewItemTitle');
+const newItemLink = document.querySelector('#NewItemLink');
 let profileName = document.querySelector('.profile__name');
 let profileAbout = document.querySelector('.profile__about');
-let form = document.querySelector('.popup__form');
 let profileFormName = document.querySelector('#ProfileName');
 let profileFormAbout = document.querySelector('#ProfileAbout');
-let newItem = document.querySelector('#NewItem');
-let newItemTitle = document.querySelector('#NewItemTitle');
-let newItemLink = document.querySelector('#NewItemLink');
+
 const initialCards = [
    {
       name: 'Архыз',
@@ -82,7 +83,7 @@ function addCard(element) {
    })
 
    //Удаление карточки. Данный обработчик добавлен в функцию addCard(). Если обработчик вынести
-   // из addCard (пример в закомментированном коде, начиная со строки 160), тогда событие срабатывает только
+   // из addCard (пример в закомментированном коде, начиная со строки 161), тогда событие срабатывает только
    // на первом элементе на странице.
    trashButton.addEventListener('click', event => {
       // const eventTargetId = event.target.id;
