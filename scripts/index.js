@@ -16,7 +16,7 @@ const profileFormName = document.querySelector('#ProfileName');
 const profileFormAbout = document.querySelector('#ProfileAbout');
 const galleryTemplate = document.querySelector('#gallery-template').content;
 const popupImage = document.querySelector('#popupImage');
-let galleryCard;
+const popupFullImage = popupImage.querySelector('.popup__image');
 
 
 function openPopup(popup) {
@@ -36,9 +36,10 @@ function submitEditProfileForm(evt) {
 
 function createCard (el) {
    const galleryItem = galleryTemplate.cloneNode(true);
+   const cardImage = galleryItem.querySelector('.gallery__image');
    galleryItem.querySelector('.gallery__title').textContent = el.name;
-   galleryItem.querySelector('.gallery__image').src = el.link;
-   galleryItem.querySelector('.gallery__image').alt = el.name;
+   cardImage.src = el.link;
+   cardImage.alt = el.name;
    galleryItem.querySelector('.gallery__item').id = el.name.split(' ').join('');
    galleryItem.querySelector('.gallery__trash').id = el.name.split(' ').join('');
 
@@ -53,25 +54,25 @@ function createCard (el) {
    })
 
    //Попап с изображением
-   galleryItem.querySelector('.gallery__image').addEventListener('click', evt => {
+   cardImage.addEventListener('click', evt => {
       openPopup(popupImage);
-      popupImage.querySelector('.popup__image').src = evt.target.src;
-      popupImage.querySelector('.popup__image').alt = evt.target.alt;
+      popupFullImage.src = evt.target.src;
+      popupFullImage.alt = evt.target.alt;
       popupImage.querySelector('#popupImageCaption').textContent = evt.target.alt;
    })
 
-    return galleryCard = galleryItem;
+    return galleryItem;
 }
 
 //Функция добавление карточки
-function addCard() {
-   gallery.prepend(galleryCard);
+function addCard(el) {
+   gallery.prepend(el);
 }
 
 //Добавление карточек из массива
 initialCards.forEach(el => {
    createCard(el);
-   addCard()
+   addCard(createCard(el))
 });
 
 editButton.addEventListener('click', () => {
@@ -106,6 +107,6 @@ formAddCard.addEventListener('submit', (evt) => {
       link: addCardLink.value
    }
    createCard(card)
-   addCard();
+   addCard(createCard(card));
    closePopup(popupNewItem);
 });
