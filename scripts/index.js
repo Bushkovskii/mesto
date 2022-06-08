@@ -71,7 +71,6 @@ function addCard(el) {
 
 //Добавление карточек из массива
 initialCards.forEach(el => {
-   createCard(el);
    addCard(createCard(el))
 });
 
@@ -106,7 +105,6 @@ formAddCard.addEventListener('submit', (evt) => {
       name: addCardTitle.value,
       link: addCardLink.value
    }
-   createCard(card)
    addCard(createCard(card));
    closePopup(popupNewItem);
 });
