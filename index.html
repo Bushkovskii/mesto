@@ -36,9 +36,12 @@
          <div class="popup__container">
             <h2 class="popup__title">Редактировать профиль</h2>
             <form action="submit" name="profile" id="formProfile" class="popup__form">
-               <input type="text" name="Name" id="ProfileName" class="popup__form-item popup__form-item_el_name">
-               <input type="text" name="About" id="ProfileAbout" class="popup__form-item popup__form-item_el_about">
-               <button type="submit" class="popup__form-button">Сохранить</button>
+               <input type="text" name="Name" id="profile-name" class="popup__input" required minlength="2" maxlength="40">
+                <span class="popup__error popup__error_type_profile-name profile-name-error"></span>
+               <input type="text" name="About" id="profile-about" class="popup__input" required minlength="2"
+                      maxlength="200">
+                <span class="popup__error popup__error_type_profile-about profile-about-error"></span>
+               <button type="submit" class="popup__button">Сохранить</button>
             </form>
             <button type="button" name="profileCloseButton" id="profileCloseButton" class="popup__close-button"></button>
          </div>
@@ -47,9 +50,11 @@
          <div class="popup__container">
             <h2 class="popup__title">Новое место</h2>
             <form action="submit" name="New Item" id="formAddCard" class="popup__form">
-               <input type="text" name="Title" placeholder="Название" id="NewItemTitle" class="popup__form-item">
-               <input type="text" name="Link" placeholder="Ссылка на картинку" id="NewItemLink" class="popup__form-item">
-               <button type="submit" id="NewItemButton" class="popup__form-button">Создать</button>
+               <input type="text" name="Title" placeholder="Название" id="new-item-title" class="popup__input" required minlength="2" maxlength="30">
+                <span class="popup__error popup__error_type_new-item-title new-item-title-error"></span>
+               <input type="url" name="Link" placeholder="Ссылка на картинку" id="new-item-link" class="popup__input" required>
+                <span class="popup__error popup__error_type_new-item-link new-item-link-error"></span>
+               <button type="submit" id="NewItemButton" class="popup__button">Создать</button>
             </form>
             <button type="button" id="NewItemCloseButton" name="NewItemCloseButton" class="popup__close-button"></button>
          </div>
@@ -80,6 +85,7 @@
    </template>
    <script src="scripts/initial-сards.js"></script>
    <script src="scripts/index.js"></script>
+   <script src="scripts/validate.js"></script>
 </body>
 
 </html>
