@@ -45,6 +45,7 @@
             </form>
             <button type="button" name="profileCloseButton" id="profileCloseButton" class="popup__close-button"></button>
          </div>
+          <div class="popup__overlay popupEdit-overlay"></div>
       </section>
       <section id="popupAdd" class="popup">
          <div class="popup__container">
@@ -54,10 +55,11 @@
                 <span class="popup__error popup__error_type_new-item-title new-item-title-error"></span>
                <input type="url" name="Link" placeholder="Ссылка на картинку" id="new-item-link" class="popup__input" required>
                 <span class="popup__error popup__error_type_new-item-link new-item-link-error"></span>
-               <button type="submit" id="NewItemButton" class="popup__button">Создать</button>
+               <button type="submit" id="NewItemButton" class="popup__button popup__button_disabled">Создать</button>
             </form>
             <button type="button" id="NewItemCloseButton" name="NewItemCloseButton" class="popup__close-button"></button>
          </div>
+          <div class="popup__overlay popupAdd-overlay"></div>
       </section>
       <section id="popupImage" class="popup">
          <div class="popup__image-container">
@@ -67,6 +69,7 @@
             </figure>
             <button type="button" id="popupImageCloseButton" name="popupImageCloseButton" class="popup__close-button"></button>
          </div>
+          <div class="popup__overlay popupImage-overlay"></div>
       </section>
    </main>
    <footer class="footer">

@@ -9,7 +9,6 @@ const validateParameters = ({
 
 const enableValidation = (settings) => {
     const formList = Array.from(document.querySelectorAll(settings.formSelector));
-    // console.log(`Массив форм:${formList}`)
     formList.forEach((formElement) => {
         formElement.addEventListener('submit', (evt) => {
             evt.preventDefault();
@@ -20,9 +19,7 @@ const enableValidation = (settings) => {
 
 const setEventListeners = (formElement, settings) => {
     const inputList = Array.from(formElement.querySelectorAll(settings.inputSelector));
-    console.log(`Массив полей:${inputList}`)
     const buttonElement = formElement.querySelector(settings.submitButtonSelector);
-    console.log(`Кнопка:${buttonElement}`)
     inputList.forEach((inputElement) => {
         inputElement.addEventListener('input', () => {
             checkInputValidity(formElement, inputElement, settings);

@@ -17,7 +17,7 @@ const profileFormAbout = document.querySelector('#profile-about');
 const galleryTemplate = document.querySelector('#gallery-template').content;
 const popupImage = document.querySelector('#popupImage');
 const popupFullImage = popupImage.querySelector('.popup__image');
-
+const popupOverlay = Array.from(document.querySelectorAll('.popup__overlay'));
 
 function openPopup(popup) {
    popup.classList.add('popup_opened');
@@ -107,4 +107,14 @@ formAddCard.addEventListener('submit', (evt) => {
    }
    addCard(createCard(card));
    closePopup(popupNewItem);
+   addCardTitle.value = '';
+   addCardLink.value = '';
 });
+
+//Закрытие попапа по клику на оверлей
+popupOverlay.forEach((overlayElement) => {
+    overlayElement.addEventListener('click', () => {
+        const popupParent = overlayElement.parentNode;
+        closePopup(popupParent);
+    })
+})

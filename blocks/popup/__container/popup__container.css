@@ -4,6 +4,7 @@
    width: 430px;
    min-height: 330px;
    border-radius: 10px;
+    z-index: 2;
 }
 
 @media screen and (max-width: 320px) {
