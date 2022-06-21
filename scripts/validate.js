@@ -38,7 +38,6 @@ const checkInputValidity = (formElement, inputElement, settings) => {
 
 const showInputError = (formElement, inputElement, errorMessage, settings) => {
     const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
-    console.log(`Элемент ошибка(show): ${errorElement}`)
     inputElement.classList.add(settings.inputErrorClass);
     errorElement.classList.add(settings.errorClass);
     errorElement.textContent = errorMessage;
@@ -46,7 +45,6 @@ const showInputError = (formElement, inputElement, errorMessage, settings) => {
 
 const hideInputError = (formElement, inputElement, settings) => {
     const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
-    console.log(`Элемент ошибка(hide): ${errorElement}`)
     inputElement.classList.remove(settings.inputErrorClass);
     errorElement.textContent = '';
     errorElement.classList.remove(settings.errorClass)

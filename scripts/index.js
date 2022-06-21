@@ -19,12 +19,24 @@ const popupImage = document.querySelector('#popupImage');
 const popupFullImage = popupImage.querySelector('.popup__image');
 const popupOverlay = Array.from(document.querySelectorAll('.popup__overlay'));
 
+//Проверка нажатой клавиши
+function checkKey (key, element) {
+    if (key === 'Escape') {
+        closePopup(element);
+    }
+}
+
 function openPopup(popup) {
    popup.classList.add('popup_opened');
+    document.addEventListener('keydown', (evt) => {
+        const key = evt.key;
+        checkKey(key, popup)
+    })
 }
 
 function closePopup(popup) {
    popup.classList.remove('popup_opened');
+   popup.removeEventListener('keydown', checkKey);
 }
 
 function submitEditProfileForm(evt) {
