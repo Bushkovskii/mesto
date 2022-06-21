@@ -7,4 +7,5 @@
 
 .popup__button_disabled:hover {
     opacity: .2;
+    cursor: inherit;
 }

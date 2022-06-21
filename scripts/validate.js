@@ -1,12 +1,3 @@
-const validateParameters = ({
-    formSelector: '.popup__form',
-    inputSelector: '.popup__input',
-    submitButtonSelector: '.popup__button',
-    inactiveButtonClass: 'popup__button_disabled',
-    inputErrorClass: 'popup__input_type_error',
-    errorClass: 'popup__error_visible'
-});
-
 const enableValidation = (settings) => {
     const formList = Array.from(document.querySelectorAll(settings.formSelector));
     formList.forEach((formElement) => {
@@ -60,8 +51,10 @@ const hasInvalidInput = (inputList) => {
 const buttonState = (inputList, buttonElement, settings) => {
     if(hasInvalidInput(inputList)) {
         buttonElement.classList.add(settings.inactiveButtonClass);
+        buttonElement.setAttribute('disabled', true);
     } else {
         buttonElement.classList.remove(settings.inactiveButtonClass);
+        buttonElement.removeAttribute('disabled', true);
     }
 }
 
