@@ -87,10 +87,6 @@ function addCard(el) {
    gallery.prepend(el);
 }
 
-function buttonAddCardDisable(buttonElement, settings) {
-    addInactiveButtonClass(buttonElement, settings);
-}
-
 //Добавление карточек из массива
 initialCards.forEach(el => {
    addCard(createCard(el))
@@ -110,7 +106,7 @@ profileCloseButton.addEventListener('click', () => {
 
 buttonAddProfile.addEventListener('click', () => {
     openPopup(popupNewItem);
-    buttonAddCardDisable(buttonAddCard, validateParameters);
+    enableSubmitButton(buttonAddCard, validateParameters);
 });
 
 newItemCloseButton.addEventListener('click', () => {
