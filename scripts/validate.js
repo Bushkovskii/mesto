@@ -48,21 +48,21 @@ const hasInvalidInput = (inputList) => {
     })
 }
 
-const enableSubmitButton = (buttonElement, settings) => {
+const disableSubmitButton = (buttonElement, settings) => {
     buttonElement.classList.add(settings.inactiveButtonClass);
     buttonElement.setAttribute('disabled', true);
 }
 
-const disableSubmitButton = (buttonElement, settings) => {
+const enableSubmitButton = (buttonElement, settings) => {
     buttonElement.classList.remove(settings.inactiveButtonClass);
     buttonElement.removeAttribute('disabled', true);
 }
 
 const toggleButtonState = (inputList, buttonElement, settings) => {
     if(hasInvalidInput(inputList)) {
-        enableSubmitButton(buttonElement, settings);
-    } else {
         disableSubmitButton(buttonElement, settings);
+    } else {
+        enableSubmitButton(buttonElement, settings);
     }
 }
 

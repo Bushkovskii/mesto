@@ -106,7 +106,7 @@ profileCloseButton.addEventListener('click', () => {
 
 buttonAddProfile.addEventListener('click', () => {
     openPopup(popupNewItem);
-    enableSubmitButton(buttonAddCard, validateParameters);
+    disableSubmitButton(buttonAddCard, validateParameters);
 });
 
 newItemCloseButton.addEventListener('click', () => {
